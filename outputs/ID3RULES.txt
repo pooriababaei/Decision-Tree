@@ -1,0 +1,12 @@
+IF population <= 1.5 AND spore-print-color <= 1.5 THEN edible = 0
+IF population <= 1.5 AND spore-print-color > 1.5 THEN edible = 1
+IF population > 1.5 AND gill-color <= 0.5 AND population <= 4.5 THEN edible = 0
+IF population > 1.5 AND gill-color <= 0.5 AND population > 4.5 AND stalk-surface-above-ring <= 0.5 THEN edible = 0
+IF population > 1.5 AND gill-color <= 0.5 AND population > 4.5 AND stalk-surface-above-ring > 0.5 AND cap-surface <= 3.5 THEN edible = 1
+IF population > 1.5 AND gill-color <= 0.5 AND population > 4.5 AND stalk-surface-above-ring > 0.5 AND cap-surface > 3.5 THEN edible = 0
+IF population > 1.5 AND gill-color > 0.5 AND gill-attachment <= 5.5 AND gill-attachment <= 2.5 AND odor <= 0.5 THEN edible = 1
+IF population > 1.5 AND gill-color > 0.5 AND gill-attachment <= 5.5 AND gill-attachment <= 2.5 AND odor > 0.5 THEN edible = 0
+IF population > 1.5 AND gill-color > 0.5 AND gill-attachment <= 5.5 AND gill-attachment > 2.5 AND stalk-color-above-ring <= 2.5 AND habitat <= 2.5 THEN edible = 1
+IF population > 1.5 AND gill-color > 0.5 AND gill-attachment <= 5.5 AND gill-attachment > 2.5 AND stalk-color-above-ring <= 2.5 AND habitat > 2.5 THEN edible = 0
+IF population > 1.5 AND gill-color > 0.5 AND gill-attachment <= 5.5 AND gill-attachment > 2.5 AND stalk-color-above-ring > 2.5 THEN edible = 1
+IF population > 1.5 AND gill-color > 0.5 AND gill-attachment > 5.5 THEN edible = 1
